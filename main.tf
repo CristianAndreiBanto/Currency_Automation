@@ -4,7 +4,7 @@ provider "aws" {
 
 resource "aws_iam_policy" "lambda_permissions" {
   name        = "lambda-permissions-policy"
-  description = "Politica cu permisiunile necesare pentru funcția Lambda"
+  description = "The permission policy required for the Lambda function"
   
   policy = jsonencode({
     "Version": "2012-10-17",
